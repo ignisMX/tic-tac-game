@@ -1,15 +1,7 @@
 import { useState } from "react"
 
 export const Block = (props) =>{
-    const [value, setValue] = useState();
+    const { index, onClick, value } = props;
 
-    const onClick = () => {
-        if(value == '' || value == null){
-            console.log('_symbol',props.symbol);
-            setValue(props.symbol);
-            props.applyValue(props.symbol, props.index);
-        }
-    }
-
-    return <div onClick={onClick} className="border">{value} element</div>
+    return <div onClick={()=>{ onClick(index) }} className="border">{value} element</div>
 }
