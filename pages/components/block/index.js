@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 export const Block = (props) =>{
     const { index, onClick, value } = props;
 
