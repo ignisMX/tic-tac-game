@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Block } from '@components/block';
 const HomePage = () => {
 
@@ -41,10 +41,10 @@ const HomePage = () => {
 
     return  <div className="container">
                 The Winner is player { winner }
-                <div className="row">
+                <div className="row row-cols-3">
                     {board.map((value, index) => {
                         return (
-                            <div className="col-4"  key={`_id_${index}`}>
+                            <div className="col columns" key={`_id_${index}`}>
                                 <Block index={index} value={value} onClick={onClick}/>
                             </div>
                             )
