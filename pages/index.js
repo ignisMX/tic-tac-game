@@ -40,7 +40,12 @@ const HomePage = () => {
     };
 
     return  <div className="container">
-                The Winner is player { winner }
+                <div className="p-3 mb-4 bg-info text-dark text-center">
+                    The Winner is player { winner }
+                </div>
+                <div className="row">
+                    <button className="btn btn-primary reset-button" type="button">Reset</button>
+                </div>
                 <div className="row row-cols-3">
                     {board.map((value, index) => {
                         return (

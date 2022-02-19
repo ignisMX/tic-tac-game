@@ -24,3 +24,7 @@ div.square:hover{
     font-size: 45px;
     color: rgb(32,201,151);
 }
+
+.reset-button{
+    margin: 30px 0px;
+}
