@@ -11,6 +11,10 @@
     font-size: 25px;
 }
 
+div.square:hover{
+  background-color: rgba(249, 249, 249, 0.8);  
+}
+
 .symbolO{
     font-size: 30px;
 }
