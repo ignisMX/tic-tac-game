@@ -17,8 +17,10 @@ div.square:hover{
 
 .symbolO{
     font-size: 30px;
+    color: rgb(13,202,240);
 }
 
 .symbolX{
     font-size: 45px;
+    color: rgb(32,201,151);
 }
