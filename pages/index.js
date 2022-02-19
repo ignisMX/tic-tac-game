@@ -39,6 +39,13 @@ const HomePage = () => {
         return null;
     };
 
+    const onReset = () => {
+
+        setBoard(Array(9).fill(null));
+        setXIsNext(true);
+        setWinner(null);
+    }
+
     return  <div className="container">
                 <div className="p-3 mb-4 bg-info text-dark text-center">
                     The Winner is player { winner }
@@ -53,7 +60,7 @@ const HomePage = () => {
                     })}                 
                 </div>
                 <div className="row">
-                    <button className="btn btn-primary reset-button" type="button">Reset</button>
+                    <button className="btn btn-primary reset-button" onClick={onReset} type="button">Reset</button>
                 </div>
             </div>
 }
